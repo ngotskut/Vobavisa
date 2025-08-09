@@ -1,0 +1,22 @@
+{
+  "name": "nft-mint-automator",
+  "version": "1.0.0",
+  "description": "Automator untuk minting NFT dengan retry, gas bump, WS circuit breaker, HTTP fallback, Flashbots, dan Prometheus telemetry",
+  "main": "src/orchestrator.ts",
+  "scripts": {
+    "start": "ts-node src/orchestrator.ts"
+  },
+  "dependencies": {
+    "@ethersproject/providers": "^5.7.0",
+    "@flashbots/ethers-provider-bundle": "^0.1.0",
+    "ethers": "^5.7.2",
+    "express": "^4.18.2",
+    "prom-client": "^14.1.0",
+    "ts-node": "^10.9.1",
+    "yargs": "^17.7.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
